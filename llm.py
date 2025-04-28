@@ -16,7 +16,7 @@ def get_mitigation_strategy(features, prediction):
     - Risk Level: {features['Risk']}
     - Priority: {features['Priority']}
     - Planned Hours: {features['Hours']}
-    - Delay: {features['Delay']}
+    - Delay: {features['Delay']} (Note: A negative delay value indicates the number of days left before the task's deadline; a positive delay means the task is overdue.)
     - Root Cause: {features['RootCause']}
     - Predicted Overdue: {"Yes" if prediction else "No"}
 
